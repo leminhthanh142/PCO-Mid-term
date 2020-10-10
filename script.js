@@ -53,3 +53,30 @@ readMoresBtn.forEach((btn, index) => btn.addEventListener("click", function () {
         btn.innerHTML = "Read More";
     }
 }))
+
+let checkThemeBtn = document.querySelector("#check");
+function setTheme (themeName) {
+    localStorage.setItem("theme", themeName);
+    document.documentElement.className = themeName;
+}
+
+function toggleTheme () {
+    if (localStorage.getItem("theme") === "dark-theme") {
+        setTheme("light-theme");
+    }
+    else {
+        setTheme("dark-theme");
+    }
+}
+
+function changTheme () {
+    if (localStorage.getItem("theme") === "dark-theme") {
+        setTheme("dark-theme");
+        checkThemeBtn.checked = true;
+    }
+    else {
+        setTheme("light-theme");
+        checkThemeBtn.checked = false;
+    }
+}
+changTheme()

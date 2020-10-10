@@ -53,6 +53,9 @@
         height: 40px;
         line-height: 40px;
     }
+    .header h3 {
+        letter-spacing: 6px;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -63,5 +66,6 @@
     .header h3 {
         font-size: 90%;
         text-align: center;
+        letter-spacing: 4px;
     }
 }

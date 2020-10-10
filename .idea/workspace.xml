@@ -16,6 +16,7 @@
       <change afterPath="$PROJECT_DIR$/../Array Cardio 1/script.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CSS variables With JS/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Music Playlist /index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dark-mode.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/background/background.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/icons/favicon-16x16.png" afterDir="false" />
@@ -41,8 +42,10 @@
       <change beforePath="$PROJECT_DIR$/../Drum-Kit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Drum-Kit/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Login Form" beforeDir="false" afterPath="$PROJECT_DIR$/../Login Form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Omnifood project" beforeDir="false" afterPath="$PROJECT_DIR$/../Omnifood project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../airbnb" beforeDir="false" afterPath="$PROJECT_DIR$/../airbnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../button j4f/.idea/button j4f.iml" beforeDir="false" />
@@ -179,7 +182,11 @@
       <workItem from="1602302806975" duration="113000" />
       <workItem from="1602302923144" duration="1318000" />
       <workItem from="1602306581309" duration="12289000" />
-      <workItem from="1602321631828" duration="667000" />
+      <workItem from="1602321631828" duration="737000" />
+      <workItem from="1602323268771" duration="235000" />
+      <workItem from="1602328772808" duration="773000" />
+      <workItem from="1602333809640" duration="3448000" />
+      <workItem from="1602342482117" duration="2094000" />
     </task>
     <servers />
   </component>

@@ -8,6 +8,7 @@
     <title>CSS Zen Garden</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
+    <link rel="stylesheet" href="dark-mode.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e01cfc4369.js" crossorigin="anonymous"></script>
@@ -243,6 +244,13 @@
             <i class="fab fa-github"></i>
         </div>
     </section>
+    <div>
+        <label for="check">
+            <input type="checkbox" id="check" style="display: none">
+            <div style="z-index: 100" class="change-theme" id="change-theme" onclick="toggleTheme()">
+            </div>
+        </label>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

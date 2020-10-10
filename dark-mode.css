@@ -1,0 +1,17 @@
+.light-theme {
+    --background-color-1: rgb(230, 230, 230);
+    --background-color-2: rgb(231,37,82);
+    --background-color-3: rgb(172,172,172);
+    --color-1: rgb(64,64,64);
+    --color-2: rgb(172,172,172);
+    --color-3: rgb(255,255,255);
+}
+
+.dark-theme {
+    --background-color-1: rgb(16, 16, 16);
+    --background-color-2: rgb(231,37,82);
+    --background-color-3: rgb(37,37,37);
+    --color-1: rgb(64,64,64);
+    --color-2: rgb(172,172,172);
+    --color-3: rgb(255,255,255);
+}
