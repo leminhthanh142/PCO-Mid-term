@@ -1,3 +1,5 @@
+
+/* ------ Rest ---------------------*/
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +7,8 @@
     text-decoration: none;
     list-style: none;
 }
+
+/* ------------ Set up Variables ------- */
 :root {
     --background-color-1: rgb(16,16,16);
     --background-color-2: rgb(231,37,82);
@@ -16,13 +20,8 @@
     --font-family-2: 'Pathway Gothic One', sans-serif;
     --font-family-3: 'Oswald', sans-serif;
 }
-.wrap-text {
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    text-overflow: ellipsis;
-    overflow: hidden;
-}
+
+/* ------------ Basic set up ------------------ */
 .box {
     width: 90%;
     margin: 0 auto;
@@ -42,6 +41,18 @@ html {
 body {
     background: black;
 }
+
+
+/* ------------ Wrap text into 3 lines with long Para ------- */
+.wrap-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+/* --------- This navigation is on top and it contains Logo ----------*/
 .navigation-bar {
     position: fixed;
     top: 0;
@@ -49,9 +60,6 @@ body {
     background: var(--background-color-1);
     z-index: 100;
     height: 70px;
-}
-.main-nav ul {
-    display: flex;
 }
 .logo {
     padding: 12px;
@@ -61,6 +69,8 @@ body {
     height: 50px;
 }
 
+
+/* ---------- Animation for welcoming --------*/
 .loading {
     top: 0;
     position: fixed;
@@ -85,6 +95,8 @@ body {
     transition: 0.4s ease-in-out 0.5s;
 }
 
+
+/* ----------- Progress-bar for animation ------------*/
 .fill-bar {
     opacity: 0;
     transition: 0.4s ease-in-out 0.5s;
@@ -107,6 +119,8 @@ body {
     transition: 1s ease-in-out 0.5s;
 }
 
+
+/* ----------- Click 3 white lines to open the side-bar ------*/
 #toggle {
     display: none;
 }
@@ -128,6 +142,7 @@ body {
     transition: 0.4s;
 }
 
+/* -------- Style the transformation for 3 bars ---------*/
 #toggle:checked ~ .bar .bar-1 {
     transform: rotate(45deg) translate(5px, 4px);
 }
@@ -140,6 +155,8 @@ body {
     transform: rotate(-45deg) translate(6px, -5px);
 }
 
+
+/* --------- Create an animation class then add it to bar-2 with js -------*/
 .animate-bar {
     animation: animate-bar 1s ease;
 }
@@ -162,6 +179,8 @@ body {
     }
 }
 
+
+/* ------------ Styling for side-bar ----------*/
 .side-bar {
     line-height: 90%;
     background-color: var(--background-color-1);
@@ -211,6 +230,8 @@ body {
     letter-spacing: 2px;
 }
 
+
+/* --------- Styling for main heading (CSS zen garden) --------*/
 header {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("public/images/man-studio-portrait-light-90764.jpeg");
     background-size: cover;
@@ -237,6 +258,7 @@ header {
     font-weight: 700;
     line-height: 120%;
 }
+
 .header h3 {
     font-size: 90%;
     font-style: italic;
@@ -246,7 +268,7 @@ header {
 }
 
 
-/*----------- Style for Get-Started button --------*/
+/*----------- Style for Getting-Started button --------*/
 .getting-started {
     margin-top: 30px;
 }
@@ -271,7 +293,7 @@ header {
 }
 
 
-/*----------- Make a hover effects for Get-Started button --------*/
+/*----------- Make a hover effects for Getting-Started button --------*/
 .getting-started a span:nth-child(1) {
     left: 0;
     bottom: 0;
@@ -327,7 +349,7 @@ header {
     transform-origin: left;
 }
 
-/*--------------- Style for beginning-text ---------*/
+/*--------------- Style for beginning-text (Demonstration.....) ---------*/
 .beginning-text {
     margin-top: 30px;
     font-size: 75%;
@@ -349,6 +371,7 @@ header {
 }
 
 
+/* ------ Create box model for main-content and add some hover effects for it -------*/
 .main-content {
     cursor: pointer;
     color: white;
@@ -412,6 +435,9 @@ header {
 .main-content:hover h3:after {
     width: 150px;
 }
+
+
+/* -------- Styling for even box (content-box 2 and 4) ---------*/
 .even-box {
     background: var(--background-color-2);
     box-shadow: 10px 10px var(--background-color-3);
@@ -432,7 +458,7 @@ header {
     text-decoration: underline;
 }
 
-
+/* ------ Styling for footer section with some copy right text -------------*/
 .footer-section {
     background-color: var(--background-color-3);
 }

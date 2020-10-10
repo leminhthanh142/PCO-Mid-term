@@ -16,19 +16,23 @@
       <change afterPath="$PROJECT_DIR$/../Array Cardio 1/script.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CSS variables With JS/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Music Playlist /index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/background1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/enso.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/man-studio-portrait-light-90764.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/responsive.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/script.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/background/background.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/icons/favicon-16x16.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/icons/favicon-32x32.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/script.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_0.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/public/images/layer_6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../parallax-2/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clock" beforeDir="false" afterPath="$PROJECT_DIR$/../Clock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clone git project/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../Clone git project/helen" beforeDir="false" />
@@ -37,7 +41,16 @@
       <change beforePath="$PROJECT_DIR$/../Drum-Kit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Drum-Kit/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Login Form" beforeDir="false" afterPath="$PROJECT_DIR$/../Login Form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Omnifood project" beforeDir="false" afterPath="$PROJECT_DIR$/../Omnifood project" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../airbnb" beforeDir="false" afterPath="$PROJECT_DIR$/../airbnb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/.idea/button j4f.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/j4f.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../button j4f/j4f.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clock with pure css ?? Why not/.idea/clock with pure css ?? Why not.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clock with pure css ?? Why not/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clock with pure css ?? Why not/.idea/misc.xml" beforeDir="false" />
@@ -48,7 +61,7 @@
       <change beforePath="$PROJECT_DIR$/../clock with pure css ?? Why not/images/this-free-icons-png-design-of-diy-clock-face-11563233883w3fofhcdjg.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../clock with pure css ?? Why not/interface.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../css-zen-garden" beforeDir="false" afterPath="$PROJECT_DIR$/../css-zen-garden" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../flexbox" beforeDir="false" afterPath="$PROJECT_DIR$/../flexbox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../flexbox" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../form-ref" beforeDir="false" afterPath="$PROJECT_DIR$/../form-ref" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../htmlWeb/.idea/htmlWeb.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../htmlWeb/.idea/misc.xml" beforeDir="false" />
@@ -63,9 +76,31 @@
       <change beforePath="$PROJECT_DIR$/../interface of ip ?/public/image/tuchup.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../kiniem30namngaysinhHCM" beforeDir="false" afterPath="$PROJECT_DIR$/../kiniem30namngaysinhHCM" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../learn-js/stop-watch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../learn-js/stop-watch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parallax/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../parallax/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parallax/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../parallax/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../parallax/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../parallax/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/parallax.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/images/layer_6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/styles/test.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/styles/test.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/public/styles/test.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/src/login/Login.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/src/login/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/src/login/styles.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/src/login/styles.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../parallax/style.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../react-webrtc" beforeDir="false" afterPath="$PROJECT_DIR$/../react-webrtc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled/.idea/modules.xml" beforeDir="false" />
@@ -97,7 +132,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ifMnBN8Oj1GwGkeqPfYTgedfpC" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,6 +144,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="liveEdit" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -142,7 +178,8 @@
       <workItem from="1602302655411" duration="128000" />
       <workItem from="1602302806975" duration="113000" />
       <workItem from="1602302923144" duration="1318000" />
-      <workItem from="1602306581309" duration="12089000" />
+      <workItem from="1602306581309" duration="12289000" />
+      <workItem from="1602321631828" duration="667000" />
     </task>
     <servers />
   </component>
@@ -155,7 +192,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/script.js</url>
           <line>7</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
