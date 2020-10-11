@@ -5,10 +5,11 @@ let loadingText = document.querySelector(".loading-text");
 let fill = document.querySelector(".fill");
 let sideBar = document.querySelector(".side-bar");
 let heading = document.querySelector(".header");
+let header = document.querySelector(".heading");
+console.log(header);
 let bar2 = document.querySelector(".bar-2");
 let readMoresBtn = document.querySelectorAll(".btn");
 let contentBoxes = Array.from(document.querySelectorAll(".content-box"));
-console.log(contentBoxes);
 let flag = false;
 
 window.onload = progressBar;
@@ -26,7 +27,6 @@ fill.addEventListener("transitionend", function () {
     heading.style.transform = "scale(1)";
     heading.style.opacity = "1";
 })
-
 
 const toggleMainNav = () => {
     flag = !flag;
@@ -63,9 +63,11 @@ function setTheme (themeName) {
 function toggleTheme () {
     if (localStorage.getItem("theme") === "dark-theme") {
         setTheme("light-theme");
+        header.classList.add("change-background");
     }
     else {
         setTheme("dark-theme");
+        header.classList.remove("change-background");
     }
 }
 
@@ -73,10 +75,12 @@ function changTheme () {
     if (localStorage.getItem("theme") === "dark-theme") {
         setTheme("dark-theme");
         checkThemeBtn.checked = true;
+        header.classList.remove("change-background");
     }
     else {
         setTheme("light-theme");
         checkThemeBtn.checked = false;
+        header.classList.add("change-background");
     }
 }
-changTheme()
+changTheme();

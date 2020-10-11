@@ -13,9 +13,11 @@
     --background-color-1: rgb(16,16,16);
     --background-color-2: rgb(231,37,82);
     --background-color-3: rgb(37,37,37);
+    --background-color-4: rgba(255,255,255,0.12);
     --color-1: rgb(64,64,64);
     --color-2: rgb(172,172,172);
     --color-3: rgb(255,255,255);
+    --color-4: white;
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Pathway Gothic One', sans-serif;
     --font-family-3: 'Oswald', sans-serif;
@@ -36,12 +38,12 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     line-height: 150%;
-    transition: 0.3s;
+    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 .change-theme {
     width: 60px;
     height: 26px;
-    background: rgb(37, 37, 37);
+    background: gray;
     font-size: 70%;
     font-family: var(--font-family-3);
     position: fixed;
@@ -64,7 +66,7 @@ html {
 }
 #check:checked ~ .change-theme:before {
     transform: translateX(34px);
-    background: rgb(37,37,37);
+    background: gray;
 }
 #check:checked ~ .change-theme {
     background: rgb(200, 200, 200);
@@ -201,10 +203,10 @@ body {
         transform: translateX(-100px);
     }
     40% {
-        transform: translateX(20px);
+        transform: translateX(12px);
     }
     60% {
-        transform: translateX(-20px);
+        transform: translateX(-12px);
     }
     100% {
         transform: translateX(0);
@@ -267,12 +269,20 @@ body {
 /* --------- Styling for main heading (CSS zen garden) --------*/
 header {
     background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("public/images/man-studio-portrait-light-90764.jpeg");
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     background-attachment: fixed;
     font-family: var(--font-family-1);
+    transition: 0.4s;
 }
-
+.change-background {
+    background-image: url("public/images/hero_01.png"), linear-gradient(rgb(255,255,255), rgb(255,255,255));
+    background-position: right;
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: 0.4s;
+}
 .header {
     opacity: 0;
     transform: scale(0.8);
@@ -285,19 +295,23 @@ header {
 }
 
 .header h1 {
+    color: var(--color-4);
     margin-top: 200px;
     font-size: 380%;
     letter-spacing: 12px;
     font-weight: 700;
     line-height: 120%;
+    transition: 0.4s;
 }
 
 .header h3 {
+    color: var(--color-4);
     font-size: 90%;
     font-style: italic;
     letter-spacing: 8px;
     margin-top: 50px;
     font-weight: 300;
+    transition: 0.4s;
 }
 
 
@@ -306,12 +320,12 @@ header {
     margin-top: 30px;
 }
 .getting-started a {
-    color: white;
+    color: var(--color-4);
     position: relative;
     padding: 12px;
     margin: 30px 0;
     font-size: 90%;
-    background: rgba(255,255,255,0.12);
+    background: var(--background-color-4);
     transition: 0.4s;
     font-family: var(--font-family-2);
     letter-spacing: 1px;
@@ -332,7 +346,7 @@ header {
     bottom: 0;
     width: 2px;
     height: 100%;
-    background: white;
+    background: var(--color-4);
     transform: scaleY(0);
     transform-origin: top;
 }
@@ -345,7 +359,7 @@ header {
     bottom: 0;
     width: 2px;
     height: 100%;
-    background: white;
+    background: var(--color-4);
     transform: scaleY(0);
     transform-origin: top;
     transition-delay: 0.3s;
@@ -359,7 +373,7 @@ header {
     top: 0;
     height: 2px;
     width: 100%;
-    background: white;
+    background: var(--color-4);
     transform-origin: right;
     transform: scaleX(0);
     transition-delay: 0.3s;
@@ -373,7 +387,7 @@ header {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background: white;
+    background: var(--color-4);
     transform-origin: right;
     transform: scaleX(0);
 }
@@ -384,12 +398,14 @@ header {
 
 /*--------------- Style for beginning-text (Demonstration.....) ---------*/
 .beginning-text {
+    color: var(--color-4);
     margin-top: 30px;
     font-size: 75%;
     font-style: italic;
     text-align: left;
     letter-spacing: 2px;
     font-weight: 300;
+    transition: 0.4s;
 }
 .beginning-text p:last-child {
     margin-top: 30px;
@@ -397,15 +413,15 @@ header {
 .beginning-text p span {
     padding: 10px;
     cursor: pointer;
-    transition: 0.3s;
 }
 .beginning-text span:hover {
-    background: rgba(255,255,255,0.2);
+    background: var(--background-color-4);
 }
 
 
 /* ------ Create box model for main-content and add some hover effects for it -------*/
 .main-content {
+    text-align: justify;
     cursor: pointer;
     color: white;
     width: 70%;
@@ -486,6 +502,18 @@ header {
 .even-box:hover .read-more button {
     background: var(--background-color-2);
     color: white;
+}
+.content-box {
+    position: relative;
+    overflow: hidden;
+}
+.content-box i {
+    position: absolute;
+    font-size: 2000%;
+    transform: translate(-50%, -50%);
+    top: 70%;
+    left: 50%;
+    color: rgba(255,255,255,0.1);
 }
 .content-box span {
     text-decoration: underline;
