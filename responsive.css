@@ -34,6 +34,7 @@
     }
     .beginning-text p {
         text-align: center;
+        font-size: 100%;
     }
     .icon-footer i {
         margin: 0 20px;
@@ -55,6 +56,7 @@
     }
     .header h3 {
         letter-spacing: 6px;
+        font-size: 110%;
     }
 }
 

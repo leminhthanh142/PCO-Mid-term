@@ -268,10 +268,11 @@ body {
 
 /* --------- Styling for main heading (CSS zen garden) --------*/
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("public/images/man-studio-portrait-light-90764.jpeg");
-    background-size: contain;
+    background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url("public/images/man-studio-portrait-light-90764.jpeg");
+    background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: var(--font-family-1);
     transition: 0.4s;
 }
@@ -406,6 +407,7 @@ header {
     letter-spacing: 2px;
     font-weight: 300;
     transition: 0.4s;
+    font-family: var(--font-family-3);
 }
 .beginning-text p:last-child {
     margin-top: 30px;
@@ -421,7 +423,6 @@ header {
 
 /* ------ Create box model for main-content and add some hover effects for it -------*/
 .main-content {
-    text-align: justify;
     cursor: pointer;
     color: white;
     width: 70%;
@@ -506,6 +507,9 @@ header {
 .content-box {
     position: relative;
     overflow: hidden;
+}
+.content-box p {
+    text-align: justify;
 }
 .content-box i {
     position: absolute;
