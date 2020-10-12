@@ -16,7 +16,10 @@
       <change afterPath="$PROJECT_DIR$/../Array Cardio 1/script.js" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../CSS variables With JS/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Music Playlist /index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/hero_02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCO-Mid-Term-2/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCO-Mid-Term-2/responsive.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCO-Mid-Term-2/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PCO-Mid-Term-2/style.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/index.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/background/background.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../Quizz App/public/images/icons/favicon-16x16.png" afterDir="false" />
@@ -42,12 +45,8 @@
       <change beforePath="$PROJECT_DIR$/../Drum-Kit/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Drum-Kit/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Login Form" beforeDir="false" afterPath="$PROJECT_DIR$/../Login Form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Omnifood project" beforeDir="false" afterPath="$PROJECT_DIR$/../Omnifood project" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PCO-Mid-Term.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PCO-Mid-Term.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dark-mode.css" beforeDir="false" afterPath="$PROJECT_DIR$/dark-mode.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/responsive.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../airbnb" beforeDir="false" afterPath="$PROJECT_DIR$/../airbnb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../button j4f/.idea/button j4f.iml" beforeDir="false" />
@@ -193,7 +192,18 @@
       <workItem from="1602405661566" duration="3080000" />
       <workItem from="1602433644220" duration="3065000" />
       <workItem from="1602440680028" duration="2182000" />
-      <workItem from="1602462867634" duration="690000" />
+      <workItem from="1602462867634" duration="952000" />
+      <workItem from="1602472001463" duration="430000" />
+      <workItem from="1602482197247" duration="11000" />
+      <workItem from="1602482222248" duration="10000" />
+      <workItem from="1602485187695" duration="92000" />
+      <workItem from="1602485905324" duration="61000" />
+      <workItem from="1602486511183" duration="133000" />
+      <workItem from="1602486761595" duration="91000" />
+      <workItem from="1602512239618" duration="397000" />
+      <workItem from="1602512939520" duration="20000" />
+      <workItem from="1602512964165" duration="4000" />
+      <workItem from="1602512993765" duration="192000" />
     </task>
     <servers />
   </component>
