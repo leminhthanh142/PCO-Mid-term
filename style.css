@@ -21,6 +21,7 @@
     --font-family-1: 'Lato', sans-serif;
     --font-family-2: 'Pathway Gothic One', sans-serif;
     --font-family-3: 'Oswald', sans-serif;
+    --transition-type: cubic-bezier(0.17, 0.67, 0, 1.01);
 }
 
 /* ------------ Basic set up ------------------ */
@@ -38,7 +39,7 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     line-height: 150%;
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 .change-theme {
     width: 60px;
@@ -51,7 +52,7 @@ html {
     right: 20px;
     border-radius: 40px;
     cursor: pointer;
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 .change-theme:before {
     content: "";
@@ -62,7 +63,7 @@ html {
     width: 22px;
     border-radius: 50%;
     background: rgb(200,200,200);
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 #check:checked ~ .change-theme:before {
     transform: translateX(34px);
@@ -95,13 +96,6 @@ body {
     z-index: 100;
     height: 70px;
 }
-.logo {
-    padding: 12px;
-}
-.logo img {
-    width: 50px;
-    height: 50px;
-}
 
 
 /* ---------- Animation for welcoming --------*/
@@ -118,7 +112,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease;
 }
 
 .loading-text {
@@ -150,7 +144,7 @@ body {
     height: 4px;
     background: var(--background-color-2);
     border-radius: 50px;
-    transition: 1s ease-in-out 0.5s;
+    transition: 1.4s var(--transition-type) 1s;
 }
 
 
@@ -228,49 +222,138 @@ body {
     justify-content: center;
     flex-direction: column;
     font-family: var(--font-family-2);
-    transition: 0.7s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 0.7s var(--transition-type);
     overflow-y: auto;
 }
 
-.author-name {
+.view {
     text-align: right;
-    margin: 10px 30px;
+    margin: 20px 30px;
     font-size: 90%;
     color: #666;
     font-style: italic;
-    position: relative;
 }
-
-.author-name:after {
+.view a:after {
     content: "";
     display: block;
     right: 0;
+    bottom: 0;
     position: absolute;
-    width: 70%;
+    width: 100%;
     height: 3px;
     background: rgb(172,172,172);
     margin: 2px 0;
     border-radius: 50px;
     transform: scaleX(0);
-    transition: 0.4s;
+    transition: 0.7s var(--transition-type);
     transform-origin: right;
 }
 
-.author-name:hover:after {
+.view:hover a:after {
     transform: scaleX(1);
 }
 
-.author-name a {
+.view a {
+    padding: 0 0 8px 0;
     color: rgb(172,172,172);
     letter-spacing: 2px;
+    position: relative;
 }
 
 
+/* ------ Style for View All Design section --------*/
+.author {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    color: var(--color-3);
+}
+.author a {
+    color: var(--color-3);
+    transition: 1s var(--transition-type);
+}
+.view-all {
+    font-size: 250%;
+    color: var(--background-color-2);
+    width: 70%;
+    margin: 0 auto 40px auto;
+    font-family: var(--font-family-3);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 700;
+    position: relative;
+    padding: 0 0 25px 0;
+}
+.view-all:after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    border-radius: 50px;
+    bottom: 0;
+    left: 0;
+    background: var(--background-color-2);
+}
+.author-name {
+    background: var(--background-color-3);
+    padding: 10px;
+    font-size: 80%;
+    font-family: var(--font-family-3);
+    cursor: pointer;
+    transition: 1s var(--transition-type);
+    box-shadow: 5px 5px var(--background-color-2);
+    position: relative;
+}
+.author-name:hover {
+    background: var(--background-color-2);
+    box-shadow: 10px 10px var(--background-color-3);
+}
+.author-name:hover .arrow-1,
+.author-name:hover .arrow-2,
+.author-name:hover .arrow-3
+{
+    background: white;
+}
+.author-name:hover .arrow {
+    right: 10px;
+}
+
+.author-name:hover a:first-child {
+    margin-left: 15px;
+}
+.author-name span {
+    font-style: italic;
+    margin-right: 5px;
+}
+.arrow {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translate(-50%, -50%);
+    transition: 0.5s var(--transition-type);
+}
+.arrow-1, .arrow-2, .arrow-3 {
+    width: 22px;
+    height: 2px;
+    background: #666666;
+    transition: 0.4s;
+}
+.arrow-1 {
+    width: 10px;
+    transform: translateX(15px) translateY(-1px) rotate(45deg);
+}
+.arrow-3 {
+    width: 10px;
+    transform: translateX(15px) translateY(1px) rotate(-45deg);
+}
+
 /* --------- Styling for main heading (CSS zen garden) --------*/
 header {
-    background-image: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), url("public/images/man-studio-portrait-light-90764.jpeg");
-    background-size: cover;
-    background-position: center;
+    background-image: url("public/images/hero_02.jpg"), linear-gradient(rgb(0,0,0), rgb(0,0,0));
+    background-size: contain;
+    background-position: right;
     background-attachment: fixed;
     background-repeat: no-repeat;
     font-family: var(--font-family-1);
@@ -430,7 +513,7 @@ header {
     padding: 20px;
     background: var(--background-color-3);
     box-shadow: 10px 10px var(--background-color-2);
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 
 .main-content h3 {
@@ -452,7 +535,7 @@ header {
     border-radius: 50px;
     background: white;
     transform-origin: left;
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 .main-content p {
     margin: 10px 0;
@@ -472,7 +555,7 @@ header {
     background: var(--background-color-2);
     letter-spacing: 1px;
     font-size: 90%;
-    transition: 1s cubic-bezier(0.17, 0.67, 0, 1.01);
+    transition: 1s var(--transition-type);
 }
 .main-content:hover {
     background: var(--background-color-2);
