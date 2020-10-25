@@ -12,7 +12,7 @@
 :root {
     --background-color-1: rgb(16,16,16);
     --background-color-2: rgb(231,37,82);
-    --background-color-3: rgb(37,37,37);
+    --background-color-3: rgb(50,50,50);
     --background-color-4: rgba(255,255,255,0.12);
     --color-1: rgb(64,64,64);
     --color-2: rgb(172,172,172);
@@ -22,6 +22,29 @@
     --font-family-2: 'Pathway Gothic One', sans-serif;
     --font-family-3: 'Oswald', sans-serif;
     --transition-type: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/*--------------- Set up variables for Dark-mode -------------*/
+.light-theme {
+    --background-color-1: rgb(230, 230, 230);
+    --background-color-2: rgb(231,37,82);
+    --background-color-3: rgb(172,172,172);
+    --background-color-4: rgba(0,0,0,0.12);
+    --color-1: rgb(64,64,64);
+    --color-2: rgb(172,172,172);
+    --color-3: rgb(255,255,255);
+    --color-4: black;
+}
+
+.dark-theme {
+    --background-color-1: rgb(16, 16, 16);
+    --background-color-2: rgb(231,37,82);
+    --background-color-3: rgb(50,50,50);
+    --background-color-4: rgba(255,255,255,0.12);
+    --color-1: rgb(64,64,64);
+    --color-2: rgb(172,172,172);
+    --color-3: rgb(255,255,255);
+    --color-4: white;
 }
 
 /* ------------ Basic set up ------------------ */
@@ -103,6 +126,7 @@ body {
     display: flex;
     padding: 20px;
     justify-content: flex-start;
+    transition: 0.7s var(--transition-type);
 }
 .main-nav li {
     margin: 0 20px;
@@ -119,7 +143,7 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 20px;
+    width: 50%;
     height: 2px;
     transform: scaleX(0);
     transform-origin: left;
@@ -127,7 +151,9 @@ body {
     border-radius: 50px;
     background-color: var(--background-color-2);
 }
-
+.main-nav li:first-child a:after {
+    transform: scaleX(1);
+}
 .main-nav li a:hover:after {
     transform: scaleX(1);
 }
@@ -181,18 +207,13 @@ body {
     transition: 1.4s var(--transition-type) 1s;
 }
 
-
 /* ----------- Click 3 white lines to open the side-bar ------*/
-#toggle {
-    display: none;
-}
-
 .bar {
     position: fixed;
     top: 20px;
     right: 30px;
     cursor: pointer;
-    z-index: 100;
+    z-index: 111;
 }
 
 .bar-1, .bar-2, .bar-3 {
@@ -203,21 +224,28 @@ body {
     background-color: white;
     transition: 0.4s;
 }
-
-/* -------- Style the transformation for 3 bars ---------*/
-#toggle:checked ~ .bar .bar-1 {
-    transform: rotate(45deg) translate(5px, 4px);
+.lines {
+    position: fixed;
+    top: 32px;
+    left: 20px;
+    transition: 0.7s var(--transition-type);
+    display: none;
+    z-index: 999;
 }
-
-#toggle:checked ~ .bar .bar-2 {
-    transform: translateX(-100px);
+.line-1, .line-2, .line-3 {
+    width: 22px;
+    height: 2px;
+    background: rgb(230,230,230);
+    transition: 0.4s;
 }
-
-#toggle:checked ~ .bar .bar-3 {
-    transform: rotate(-45deg) translate(6px, -5px);
+.line-1 {
+    width: 10px;
+    transform: translateX(15px) translateY(-1px) rotate(45deg);
 }
-
-
+.line-3 {
+    width: 10px;
+    transform: translateX(15px) translateY(1px) rotate(-45deg);
+}
 /* --------- Create an animation class then add it to bar-2 with js -------*/
 .animate-bar {
     animation: animate-bar 1s ease;
@@ -257,7 +285,6 @@ body {
     flex-direction: column;
     font-family: var(--font-family-2);
     transition: 0.7s var(--transition-type);
-    overflow-y: auto;
 }
 
 .view {
@@ -312,13 +339,14 @@ body {
     font-size: 250%;
     color: var(--background-color-2);
     width: 70%;
+    line-height: 120%;
     margin: 0 auto 40px auto;
     font-family: var(--font-family-3);
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 700;
     position: relative;
-    padding: 0 0 25px 0;
+    padding-bottom: 10px;
 }
 .view-all:after {
     content: "";
@@ -331,6 +359,7 @@ body {
     background: var(--background-color-2);
 }
 .author-name {
+    overflow: hidden;
     background: var(--background-color-3);
     padding: 10px;
     font-size: 80%;
@@ -339,6 +368,22 @@ body {
     transition: 1s var(--transition-type);
     box-shadow: 5px 5px var(--background-color-2);
     position: relative;
+}
+.author-name a {
+    position: relative;
+}
+.author-name a i {
+    position: absolute;
+    opacity: 0;
+    left: -30px;
+    bottom: 0;
+    transform: translateY(-5px);
+    transition: 0.4s ease-in-out;
+}
+.author-name:hover i {
+    color: white;
+    opacity: 1;
+    left: -20px;
 }
 .author-name:hover {
     background: var(--background-color-2);
@@ -355,7 +400,7 @@ body {
 }
 
 .author-name:hover a:first-child {
-    margin-left: 15px;
+    margin-left: 20px;
 }
 .author-name span {
     font-style: italic;
@@ -414,7 +459,7 @@ header {
 
 .header h1 {
     color: var(--color-4);
-    margin-top: 200px;
+    margin-top: 150px;
     font-size: 380%;
     letter-spacing: 12px;
     font-weight: 700;
@@ -428,7 +473,7 @@ header {
     font-style: italic;
     letter-spacing: 8px;
     margin-top: 50px;
-    font-weight: 300;
+    font-weight: 700;
     transition: 0.4s;
 }
 
@@ -550,15 +595,15 @@ header {
     transition: 1s var(--transition-type);
 }
 
-.main-content h3 {
+.main-content a {
     font-size: 150%;
     font-family: var(--font-family-1);
     font-weight: 700;
+    margin: 20px 0 20px 5px;
     text-transform: uppercase;
-    margin-bottom: 40px;
     position: relative;
-    padding: 8px 0;
 }
+
 .main-content h3:after {
     content: "";
     position: absolute;
@@ -646,6 +691,10 @@ header {
 }
 .copy-right {
     text-align: center;
+    font-family: var(--font-family-3);
+}
+.copy-right a {
+    text-decoration: underline;
 }
 .copy-right p:after {
     display: block;
@@ -655,7 +704,7 @@ header {
     background-color: var(--color-2);
     content: " ";
 }
-.footer-section p,i {
+.footer-section p, i, a {
     color: var(--color-2);
 }
 .icon-footer {
@@ -676,4 +725,123 @@ header {
 .icon-footer i:hover {
     background-color: var(--color-2);
     color: #333;
+}
+
+/*--------------- Make the website responsive -----------*/
+
+
+@media screen and (max-width: 1000px){
+    html {
+        font-size: 18px;
+    }
+    .main-content {
+        width: 90%;
+    }
+    .main-content p {
+        font-size: 90%;
+    }
+    .icon-footer i {
+        margin: 0 30px;
+    }
+    .author {
+        grid-gap: 20px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .author {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    html {
+        font-size: 17px;
+    }
+    .main-content p {
+        font-size: 100%;
+    }
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .header h1 {
+        margin: 0;
+        font-size: 300%;
+    }
+    .beginning-text p {
+        text-align: center;
+        font-size: 100%;
+    }
+    .icon-footer i {
+        margin: 0 20px;
+    }
+    .main-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background: rgb(50,50,50);
+    }
+    .main-nav li {
+        margin: 15px 0;
+    }
+    .main-nav li a {
+        font-size: 130%;
+    }
+    .main-nav li a:after {
+        width: 100%;
+        transform-origin: center;
+    }
+    .main-nav li:first-child a:after {
+        transform: scaleX(1);
+    }
+    .main-nav li a:hover:after {
+        transform: scaleX(1);
+    }
+    .lines {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .header h1 {
+        font-size: 230%;
+    }
+    .icon-footer {
+        font-size: 120%;
+    }
+    .icon-footer i {
+        margin: 0 10px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    .header h3 {
+        letter-spacing: 6px;
+        font-size: 110%;
+    }
+    .author {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .header h1 {
+        font-size: 200%;
+        text-align: center;
+    }
+    .header h3 {
+        font-size: 90%;
+        text-align: center;
+        letter-spacing: 4px;
+    }
 }

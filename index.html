@@ -2,13 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>CSS Zen Garden</title>
     <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="stylesheet" href="responsive.css" type="text/css">
-    <link rel="stylesheet" href="dark-mode.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Oswald:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e01cfc4369.js" crossorigin="anonymous"></script>
@@ -17,14 +14,18 @@
     <section>
         <div class="navigation-bar">
             <div class="box">
+                <div class="lines" onclick="toggleMenu()">
+                    <div class="line-1"></div>
+                    <div class="line-2"></div>
+                    <div class="line-3"></div>
+                </div>
                 <ul class="main-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Works</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#heading">Home</a></li>
+                    <li><a href="#the-road">The Road...</a></li>
+                    <li><a href="#about">About?</a></li>
+                    <li><a href="#participation">Participation</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                    <li><a href="#requirements">Requirements</a></li>
                 </ul>
             </div>
         </div>
@@ -39,7 +40,7 @@
     </section>
     <div class="side-bar">
         <div class="view">
-            <a href="#">VIEW THIS DESIGN’S CSS</a>
+            <a href="style.css">VIEW THIS DESIGN’S CSS</a>
         </div>
         <div class="view">
             <a href="#">CSS RESOURCES</a>
@@ -54,15 +55,12 @@
             <a href="#">TRANSLATIONS</a>
         </div>
     </div>
-    <label for="toggle">
-        <input type="checkbox" id="toggle">
-        <div class="bar" onclick="toggleMainNav()">
-            <div class="bar-1"></div>
-            <div class="bar-2"></div>
-            <div class="bar-3"></div>
-        </div>
-    </label>
-    <header class="heading">
+    <div class="bar" onclick="toggleMainNav()">
+        <div class="bar-1"></div>
+        <div class="bar-2"></div>
+        <div class="bar-3"></div>
+    </div>
+    <header class="heading" id="heading">
         <div class="box">
             <div class="header">
                 <h1>CSS Zen Garden</h1>
@@ -81,9 +79,9 @@
                         <br>Select any style sheet from the list to load it into this page.
                     </p>
                     <p>Download the file here
-                        <span>HTML file</span>
+                        <a style="color: var(--color-4)" href="#"><span>HTML file</span></a>
                         and
-                        <span>CSS file</span>
+                        <a style="color: var(--color-4)" href="#"><span>CSS file</span></a>
                     </p>
                 </div>
             </div>
@@ -93,7 +91,7 @@
         <div class="view-all box">View All Design</div>
         <div class="author box">
             <div class="author-name">
-                <a href="#">MOZART</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>MOZART</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -103,7 +101,7 @@
                 <a href="#">Andrew Brundle</a>
             </div>
             <div class="author-name">
-                <a href="#">ORGANICA CREATIVA</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>ORGANICA CREATIVA</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -113,7 +111,7 @@
                 <a href="#">Eduardo Cesario</a>
             </div>
             <div class="author-name">
-                <a href="#">WILDERNESS</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>WILDERNESS</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -123,7 +121,7 @@
                 <a href="#">Aadesh Mistry</a>
             </div>
             <div class="author-name">
-                <a href="#">FADED FLOWERS</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>FADED FLOWERS</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -133,8 +131,7 @@
                 <a href="#">Mani Sheriar</a>
             </div>
             <div class="author-name">
-                <a href="#">
-                    MANHATTAN EDITION</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>MANHATTAN EDITION</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -144,7 +141,7 @@
                 <a href="#">José Tomás Tocino García</a>
             </div>
             <div class="author-name">
-                <a href="#">PEACE OF MIND</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>PEACE OF MIND</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -154,7 +151,7 @@
                 <a href="#">Carlos Varela</a>
             </div>
             <div class="author-name">
-                <a href="#">45 RPM</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>45 RPM</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -164,7 +161,7 @@
                 <a href="#">Thomas Michaud</a>
             </div>
             <div class="author-name">
-                <a href="#">PRETTY IN PINK</a><br>
+                <a href="#"><i class="fas fa-hand-point-right"></i>PRETTY IN PINK</a><br>
                 <span>by</span>
                     <div class="arrow">
                         <div class="arrow-1"></div>
@@ -175,10 +172,11 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="the-road">
         <div class="main-content box">
             <div class="content-box">
-                <h3>The Road To Enlightenment</h3>
+                <p></p>
+                <a style="color: white; " href="#">The Road To Enlightenment</a>
                 <p>Littering a dark and dreary road lay the past relics of browser-specific tags,
                     incompatible DOMs, broken CSS support, and abandoned browsers.
                 </p>
@@ -196,10 +194,13 @@
             </div>
         </div>
     </section>
-    <section>
+
+    </section>
+    <section id="about">
         <div class="main-content box even-box">
             <div class="content-box">
-                <h3>SO WHAT IS THIS ABOUT?</h3>
+                <p></p>
+                <a style="color: white;" href="#">SO WHAT IS THIS ABOUT?</a>
                 <p>There is a continuing need to show the power of CSS. The Zen Garden aims to excite, inspire,
                     and encourage participation. To begin, view some of the existing designs in the list.
                     Clicking on any one will load the style sheet into this very page.
@@ -218,10 +219,11 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="participation">
         <div class="main-content box">
             <div class="content-box">
-                <h3>PARTICIPATION</h3>
+                <p></p>
+                <a style="color:white;" href="#">PARTICIPATION</a>
                 <p>Strong visual design has always been our focus. You are modifying this page, so strong CSS skills
                     are necessary too, but the example files are commented well enough that even CSS novices can use
                     them as starting points. Please see the <span>CSS Resource Guide</span> for advanced tutorials and tips on working with CSS.
@@ -241,10 +243,11 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="benefits">
         <div class="main-content box even-box">
             <div class="content-box">
-                <h3>BENEFITS</h3>
+                <p></p>
+                <a style="color: white;" href="#">BENEFITS</a>
                 <p>Why participate? For recognition, inspiration, and a resource we can all refer to showing people how
                     amazing CSS really can be. This site serves as equal parts inspiration for those working on the web
                     today, learning tool for those who will be tomorrow, and gallery of future techniques we can all look forward to.
@@ -255,10 +258,11 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="requirements">
         <div class="main-content box">
             <div class="content-box">
-                <h3>REQUIREMENTS</h3>
+                <p></p>
+                <a style="color:white;" href="#">REQUIREMENTS</a>
                 <p>Where possible, we would like to see mostly CSS 1 & 2 usage. CSS 3 & 4 should be limited to widely-supported elements
                     only, or strong fallbacks should be provided. The CSS Zen Garden is about functional, practical CSS and not the
                     latest bleeding-edge tricks viewable by 2% of the browsing public. The only real requirement we have is that your CSS validates.
@@ -287,7 +291,7 @@
     </section>
     <section class="footer-section">
         <div class="box copy-right">
-            <p>Copyright &copy; 2020 by Thanhle. All rights reserved</p>
+            <p role="contentinfo">By <a href="http://www.mezzoblue.com/">Dave Shea</a>. Bandwidth graciously donated by <a href="http://www.mediatemple.net/">mediatemple</a>. Now available: <a href="http://www.amazon.com/exec/obidos/ASIN/0321303474/mezzoblue-20/">Zen Garden, the book</a>.</p>
         </div>
         <div class="box icon-footer">
             <i class="fab fa-html5"></i>
@@ -300,16 +304,10 @@
     <div>
         <label for="check">
             <input type="checkbox" id="check" style="display: none">
-            <div style="z-index: 100" class="change-theme" id="change-theme" onclick="toggleTheme()">
-            </div>
+            <span style="z-index: 100" class="change-theme" id="change-theme" onclick="toggleTheme()">
+            </span>
         </label>
     </div>
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
 </html>
-
-<!--<i class="fas fa-road"></i>-->
-<!--<i class="fas fa-question"></i>-->
-<!--<i class="fas fa-handshake"></i>-->
-<!--<i class="far fa-smile-wink"></i>-->
-<!--<i class="fas fa-tasks"></i>-->

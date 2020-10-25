@@ -6,8 +6,9 @@ let fill = document.querySelector(".fill");
 let sideBar = document.querySelector(".side-bar");
 let heading = document.querySelector(".header");
 let header = document.querySelector(".heading");
-console.log(header);
+let bar1 = document.querySelector(".bar-1")
 let bar2 = document.querySelector(".bar-2");
+let bar3 = document.querySelector(".bar-3");
 let readMoresBtn = document.querySelectorAll(".btn");
 let contentBoxes = Array.from(document.querySelectorAll(".content-box"));
 let flag = false;
@@ -21,7 +22,6 @@ function progressBar () {
     contentBoxes.forEach(contentBox => contentBox.classList.add("wrap-text"));
 }
 
-
 fill.addEventListener("transitionend", function () {
     loadingSection.style.top = "-100vh";
     heading.style.transform = "scale(1)";
@@ -32,13 +32,31 @@ const toggleMainNav = () => {
     flag = !flag;
     if (flag === true) {
         sideBar.style.right = "0";
+        bar1.style.transform = "rotate(45deg) translate(5px, 4px)";
+        bar3.style.transform = "rotate(-45deg) translate(6px, -5px)";
         bar2.style.opacity = "0";
         bar2.classList.remove("animate-bar");
     }
     else {
         sideBar.style.right = "-300px";
+        bar1.style.transform = "rotate(0deg) translate(0px, 0px)";
+        bar3.style.transform = "rotate(0deg) translate(0px, 0px)";
         bar2.style.opacity = "1";
         bar2.classList.add("animate-bar");
+    }
+}
+
+const menu = document.querySelector(".main-nav");
+const lines = document.querySelector(".lines");
+const toggleMenu = () => {
+    flag = !flag;
+    if (flag === true) {
+        lines.style.transform = "rotate(180deg)";
+        menu.style.top = "0";
+    }
+    else {
+        lines.style.transform = "rotate(0deg)";
+        menu.style.top = "-100vh";
     }
 }
 
